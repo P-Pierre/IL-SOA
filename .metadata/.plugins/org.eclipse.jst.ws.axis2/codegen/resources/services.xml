@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.6.4  Built on : Dec 28, 2015 (10:03:39 GMT) --><serviceGroup>
+    <service name="MaCommandeWS">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="fr.insa.tds.MaCommandeWSMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">fr.insa.tds.MaCommandeWSSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getOrderInformation" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://insa.fr/TDS">
+            <actionMapping>http://insa.fr/TDS/NewOperation</actionMapping>
+            <outputActionMapping>http://insa.fr/TDS/MaCommandeWSPortType/getOrderInformationResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

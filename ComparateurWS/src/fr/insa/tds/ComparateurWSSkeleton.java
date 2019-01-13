@@ -1,0 +1,45 @@
+
+/**
+ * ComparateurWSSkeleton.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis2 version: 1.6.4  Built on : Dec 28, 2015 (10:03:39 GMT)
+ */
+package fr.insa.tds;
+
+/**
+ * ComparateurWSSkeleton java skeleton for the axisService
+ */
+public class ComparateurWSSkeleton {
+
+	/**
+         * Auto generated method signature
+         * 
+                                     * @param compareRequest 
+             * @return compareResponse 
+         */
+        
+                 public fr.insa.tds.CompareResponse compare(fr.insa.tds.CompareRequest compareRequest)
+            {
+                //récupérer les éléments qui constituent la requete compareRequest qui est de type compareRequestType
+                CompareRequestType requestType= compareRequest.getCompareRequest();
+                
+                //récupération du premier paramètre de la requète
+                String chaine= requestType.getChaine();
+                
+              //récupération du premier paramètre de la requète
+                String sousChaine= requestType.getSousChaine();
+                
+                //stockage du résultat de la vérification que chaine contient sousChaine
+                boolean isSubChaine= chaine.contains(sousChaine);
+                //stockage de la position de sousChaine dans position
+                int position=chaine.indexOf(sousChaine);
+                
+                //Création de l'objet réponse de la classe CompareResponse ainsi que les parties de la réponse
+                CompareResponse response = new CompareResponse();
+                response.setEstSousChaine(isSubChaine);
+                response.setPositionSousChaine(position);
+                return response;
+        }
+
+}

@@ -1,0 +1,19 @@
+INDEX VERSION 1.131
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1720588581.index
+\WebServiceProject\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3698761447.index
+\ComparateurWS\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3957995783.index
+\MaCommandeWS\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3731526462.index
+\MaCommandeWS\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1249539310.index
+\ComparateurWS\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4177862358.index
+\WebServiceProject\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\307520325.index
+\ComparateurWS\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1139558710.index
+\WebServiceProject\src
+C:\Users\pierr\Documents\5AISS\IL-AOS\eclipse-jee-workspace-TD1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1537690367.index
+\MaCommandeWS\src

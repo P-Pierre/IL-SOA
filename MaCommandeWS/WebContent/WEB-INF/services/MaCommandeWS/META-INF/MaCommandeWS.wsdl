@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="MaCommandeWS" targetNamespace="http://insa.fr/TDS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://insa.fr/TDS" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://insa.fr/TDS">
+      <xsd:element name="getOrderInformationResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="statutCommande" type="xsd:string"/>
+          	<xsd:element name="nbArticles" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOrderInformationRequest" type="tns:getOrderInformationRequestType">
+      </xsd:element>
+
+      <xsd:complexType name="getOrderInformationRequestType">
+      	<xsd:sequence>
+      		<xsd:element name="nom" type="xsd:string"/>
+      		<xsd:element name="prenom" type="xsd:string"/>
+      		<xsd:element name="adresse" type="xsd:string"/>
+      	</xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getOrderInformationRequest">
+    <wsdl:part name="parameters" element="tns:getOrderInformationRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOrderInformationResponse">
+    <wsdl:part name="parameters" element="tns:getOrderInformationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MaCommandeWSPortType">
+    <wsdl:operation name="getOrderInformation">
+      <wsdl:input message="tns:getOrderInformationRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:getOrderInformationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MaCommandeWSBinding" type="tns:MaCommandeWSPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getOrderInformation">
+      <soap:operation soapAction="http://insa.fr/TDS/NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MaCommandeWS">
+    <wsdl:port name="MaCommandeWSSOAPPort" binding="tns:MaCommandeWSBinding">
+      <soap:address location="http://localhost:8080/MaCommandeWS/services/MaCommandeWS/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

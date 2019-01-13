@@ -1,0 +1,8 @@
+127.0.0.1 - - [08/Jan/2019:22:28:53 +0100] "GET / HTTP/1.1" 404 956
+127.0.0.1 - - [08/Jan/2019:23:00:29 +0100] "GET /ComparateurWS/services/ComparateurWS?wsdl HTTP/1.1" 200 2374
+127.0.0.1 - - [08/Jan/2019:23:00:29 +0100] "GET /ComparateurWS/services/ComparateurWS?wsdl HTTP/1.1" 200 2374
+127.0.0.1 - - [08/Jan/2019:23:01:18 +0100] "POST /ComparateurWS/services/ComparateurWS/ HTTP/1.1" 200 382
+127.0.0.1 - - [08/Jan/2019:23:23:39 +0100] "GET / HTTP/1.1" 404 956
+127.0.0.1 - - [08/Jan/2019:23:43:33 +0100] "GET /MaCommandeWS/services/MaCommandeWS?wsdl HTTP/1.1" 200 2527
+127.0.0.1 - - [08/Jan/2019:23:43:33 +0100] "GET /MaCommandeWS/services/MaCommandeWS?wsdl HTTP/1.1" 200 2527
+127.0.0.1 - - [08/Jan/2019:23:43:49 +0100] "POST /MaCommandeWS/services/MaCommandeWS/ HTTP/1.1" 200 401
